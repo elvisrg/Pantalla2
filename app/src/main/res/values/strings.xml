@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">dispositvos_moviles</string>
+    <string name="Form">Calculadora</string>
+    <string name="Lado1">Valor 1</string>
+    <string name="Lado2">Valor 2</string>
+    <string name="Resul">El resultado es:</string>
+</resources>
