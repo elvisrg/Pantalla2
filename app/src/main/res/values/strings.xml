@@ -4,4 +4,6 @@
     <string name="Lado1">Valor 1</string>
     <string name="Lado2">Valor 2</string>
     <string name="Resul">El resultado es:</string>
+    <string name="Google">Abrir Google</string>
+    <string name="Telefono">Llamar</string>
 </resources>

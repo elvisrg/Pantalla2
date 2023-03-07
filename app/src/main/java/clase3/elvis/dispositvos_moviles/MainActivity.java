@@ -2,6 +2,7 @@ package clase3.elvis.dispositvos_moviles;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -16,12 +17,40 @@ public class MainActivity extends AppCompatActivity {
     EditText valor1, valor2;
     TextView result;
     Button calculate;
+    Button ir; //
+    Button Telef;
+    String phoneNumber = "3053286512";
 
-
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ir = findViewById(R.id.id_google);
+        Telef = findViewById(R.id.id_llamada);
+
+        Telef.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Llamar = new Intent(Intent.ACTION_DIAL);
+                Llamar.setData(Uri.parse( "tel:"+phoneNumber));
+                if(Llamar.resolveActivity(getPackageManager()) !=null){
+                    startActivity(Llamar);
+                }
+            }
+        });
+
+        ir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Abrir_Google(v);
+            }
+        });
+
+
+
+
         Log.i(TAG, "--Crear--");
         valor1 =findViewById(R.id.valor1);
         valor2 =findViewById(R.id.valor2);
@@ -44,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
+
+
     }
 
     @Override
@@ -86,6 +117,17 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+    public void Abrir_Google(View view){
+        Intent IrAGoogle = new Intent(Intent.ACTION_VIEW);
+        IrAGoogle.setData(Uri.parse( "https://www.google.com/"));
+        startActivity(IrAGoogle);
+    }
+
+    public void Llamar(View view){
+        Intent IrAGoogle = new Intent(Intent.ACTION_VIEW);
+        IrAGoogle.setData(Uri.parse( "https://www.google.com/"));
+        startActivity(IrAGoogle);
     }
 
 }

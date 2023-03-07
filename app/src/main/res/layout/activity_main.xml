@@ -103,18 +103,66 @@
         </TextView>
 
 
+
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/calcular"
-        android:layout_width="215dp"
-        android:layout_height="80dp"
-        android:layout_margin="110dp"
-        android:text="Calcular"
-        android:textSize="30dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/calcular"
+            android:layout_width="215dp"
+            android:layout_height="80dp"
+            android:layout_margin="1dp"
+            android:text="Calcular"
+            android:textSize="30dp"
+            >
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
         >
 
-    </Button>
+        <Button
+            android:id="@+id/id_google"
+            android:layout_width="215dp"
+            android:layout_height="89dp"
+            android:layout_margin="40dp"
+            android:text="@string/Google"
+            android:textSize="27dp"
+            android:gravity="center">
+            >
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <Button
+            android:id="@+id/id_llamada"
+            android:layout_width="215dp"
+            android:layout_height="89dp"
+            android:layout_margin="40dp"
+            android:text="@string/Telefono"
+            android:textSize="27dp"
+            android:gravity="center">
+            >
+
+        </Button>
+    </LinearLayout>
+
+
+
+
 
 
 </LinearLayout>

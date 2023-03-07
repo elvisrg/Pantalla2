@@ -3,17 +3,21 @@ package clase3.elvis.dispositvos_moviles;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity2 extends AppCompatActivity {
 
     TextView mostrarDatos, valor1, valor2;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main2);
+
+
+
         String Lado1 = getIntent().getStringExtra("Lado1");
         String Lado2 = getIntent().getStringExtra("Lado2");
         publicarDatos(Lado1, Lado2);
