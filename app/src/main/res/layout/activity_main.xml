@@ -135,8 +135,10 @@
             android:layout_margin="40dp"
             android:text="@string/Google"
             android:textSize="27dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:backgroundTint="#9EA330 "
             >
+
 
         </Button>
     </LinearLayout>
@@ -151,11 +153,12 @@
             android:id="@+id/id_llamada"
             android:layout_width="215dp"
             android:layout_height="89dp"
-            android:layout_margin="40dp"
+            android:layout_margin="50dp"
             android:text="@string/Telefono"
             android:textSize="27dp"
-            android:gravity="center">
-            >
+            android:gravity="center"
+            android:backgroundTint="#33FF64">
+
 
         </Button>
     </LinearLayout>
